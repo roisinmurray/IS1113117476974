@@ -41,7 +41,7 @@
             
             <label for="total">
                 Total
-                <input type="text" id="total" value="0.00" />
+                <input type="hidden" id="total" name="total" value="0.00" />
             </label>
             
             <br/>
