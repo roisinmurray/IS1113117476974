@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
    
    <style>
     body {
@@ -46,7 +47,7 @@ div.education {
     float: left;
     width: 180px;
 }
-
+x
 div.education:hover {
     border: 1px solid #777;
 }
@@ -55,7 +56,6 @@ div.education img {
     width: 100%;
     height: auto;
 }
-
 
 div.gallery {
     margin: 5px;
@@ -80,7 +80,7 @@ div.gallery2 {
     margin: 5px;
     border: 8px solid violet;
     position: relative;
-    left: 100px;
+    left: 420px;
     width: 350px;
 }
 
@@ -90,16 +90,12 @@ div.gallery2 img {
     height: auto;
 }
 
-div.desc2 {
-    padding: 15px;
-    text-align: center;
-}
 
 div.gallery3 {
     margin: 5px;
     border: 8px solid violet;
     position: relative;
-    left: 30px;
+    left: 800px;
     width: 350px;
 }
 
@@ -109,17 +105,14 @@ div.gallery3 img {
     height: auto;
 }
 
-div.desc3 {
-    padding: 15px;
-    text-align: center;
-}
+
 
 div.gallery4 {
     margin: 5px;
     border: 8px solid violet;
     position: relative;
-    left: 30px;
-    width: 350px;
+    left: 550px;
+    width: 500px;
 }
 
 
@@ -128,10 +121,32 @@ div.gallery4 img {
     height: auto;
 }
 
-div.desc4 {
-    padding: 15px;
-    text-align: center;
+
+
+* {
+    box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 </style>
 
 </head>
@@ -147,8 +162,8 @@ div.desc4 {
     <h1 class="mainheading">Education</h1>
     
      <div class="education">
-  <a href="learning.png">
-    <img src="learning.png" alt="education" width="300" height="200">
+  <a href="education.png">
+    <img src="education.png" alt="education" width="300" height="200">
   </a>
   
     </br>
@@ -156,39 +171,52 @@ div.desc4 {
     </br>
     </br>
     
-   <div class="gallery">
+    <p>I started school when i was 5 years old.I spent two years in my local all girls primary school.When i was eight years old myself and my family moved to the other side of the world for my dads jobs.where i spent three years in school before returned home .</p>
+    
+    <div class="row">
+  <div class="column">
+    
+    <p>  <div class="gallery">
   <a target="_blank" href="primary school.png">
     <img src="primary school.png" alt="primaryschool" width="600" height="400">
   </a>
   <div class="desc"><p><strong>Primary School:</strong>St Johns GNS</p>
     <p><strong>Address:</strong> Ballea Road</p>
     <p><strong>Year:</strong>2003-2005, 2008-2011</p></div>
-</div>
+</div></p>
+  </div>
+  
+  <div class="column">
     
-     <div class="gallery2">
+    <p> <div class="gallery2">
   <a target="_blank" href="australia.png">
     <img src="australia.png" alt="primaryaustralia" width="600" height="400">
   </a>
-  <div class="desc2"><p><strong>Primary School:</strong>Jubilee-Queensland, Australia</p>
+  <div class="desc"><p><strong>Primary School:</strong>Jubilee, Australia</p>
     <p><strong>Address:</strong> Gold Coast</p>
     <p><strong>Year:</strong>2005-2008</p></div>
 </div>
+    </p>
+  </div>
+  
+  <div class="column">
     
-     <div class="gallery3">
+    <p>  <div class="gallery3">
   <a target="_blank" href="secondary.png">
     <img src="secondary.png" alt="secondary" width="600" height="400">
   </a>
-  <div class="desc3"><p><strong>Secondary School:</strong> Carrigaline Community</p>
+  <div class="desc"><p><strong>Secondary School:</strong> Carrigaline Community</p>
     <p><strong>Address:</strong> Waterpark, Carrigaline, Cork</p>
-    <p><strong>Phone:</strong> 026558595</p>
     <p><strong>Year:</strong> 2011-2017</p></div>
-</div>
+</div></p>
+  </div>
+
     
      <div class="gallery4">
-  <a target="_blank" href="education.png">
-    <img src="education.png" alt="college" width="600" height="400">
+  <a target="_blank" href="learning.png">
+    <img src="learning.png" alt="college" width="800" height="400">
   </a>
-  <div class="desc4"><p><strong>College:</strong> University College Cork</p>
+  <div class="desc"><p><strong>College:</strong> University College Cork</p>
     <p><strong>Course:</strong> BIS</p>
     <p><strong>Year:</strong> 2017-2021</p></div>
 </div>
@@ -196,3 +224,11 @@ div.desc4 {
 </body>
 
 </html>
+
+
+
+
+
+
+
+
