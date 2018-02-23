@@ -33,15 +33,6 @@ function display(parm1){
     enablebtnProceed();
 }
     
-    function calcDisVatTotal(){
-    
-   var parmSubTotal;
-   var argSubTotal;
-        if  argSubTotal = 100;{
-            pa
-            
-        }
-    }
     
     
     function enablebtnProceed(){
