@@ -12,6 +12,14 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <style>
+        
+    body {
+    background-image: url("paper.jpg");
+} 
+    </style>
+    
     </head>
     
     <body>
@@ -27,6 +35,26 @@ session_start();
                 </label>
                 
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                
+                
+                
+                
+                <label for="email">
+                     EMAIL
+                </label>
+                
+                <input type="text" id="user_email" placeholder="email" >
+                
+                
+                
+                <label for="name">
+                     NAME 
+                </label>
+                
+                <input type="text" id="user_name" placeholder="name" >
+                
+                
+                
                     
                 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
@@ -44,6 +72,8 @@ session_start();
         <?php
             // Sat session variables
             $_SESSION["total"] = $_POST["total"];
+            $_SESSION["name"] = $_POST["name"];
+            $_SESSION["email"] = $_POST["email"];
             ?>
     </body>
     

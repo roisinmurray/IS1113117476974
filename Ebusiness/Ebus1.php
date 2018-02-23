@@ -9,8 +9,13 @@
         
     </head>
     
-    <body>
+    <style>
         
+    body {
+    background-image: url("paper.jpg");
+} 
+    </style>
+    
         <h4>Select a Product</h4>
         
         <br/>
@@ -24,9 +29,23 @@
             
             <br/>
             
-            <label for="aws">
-                <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                AWS @ $300
+             <label for="cloud9">
+                <input type="radio" id="cloud9" name="product" Checked onClick="disablebtnProceed()"/>
+                cloud9 @ $200
+            </label>
+            
+            <br/>
+            
+             <label for="amazon web service">
+                <input type="radio" id="amazon web service" name="product" Checked onClick="disablebtnProceed()"/>
+                amazon web service @ $300
+            </label>
+            
+            <br/>
+            
+             <label for="gmail">
+                <input type="radio" id="gmail" name="product" Checked onClick="disablebtnProceed()"/>
+                gmail @ $400
             </label>
             
             <br/>
@@ -35,6 +54,20 @@
             <label for="subtotal">
                 Sub Total
                 <input type="text" id="subtotal" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            
+            <label for="discount">
+                discount @ 5%
+                <input type="text" id="discount" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            
+            <label for="vat">
+                vat @ 10%
+                <input type="text" id="vat" value="0.00" readonly/>
             </label>
             
             <br/>

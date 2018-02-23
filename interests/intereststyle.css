@@ -1,14 +1,15 @@
 #section1{
-    background-color: rgb(242, 242, 242);
-    text-align:center;
-}
+    
+    background-image: url("world.jpg");
+      text-align:center;
+} 
+    
 #section2{
-    background-color: rgb(51, 153, 204);
-        text-align:center;
-
+    background-image: url("paris.jpg");
+      text-align:center;
 }
 #section3{
-    background-color: rgb(238, 0, 90);
-        text-align:center;
-
+    
+    background-color: yellow;
+      text-align:center;
 }
