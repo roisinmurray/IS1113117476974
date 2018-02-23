@@ -16,38 +16,183 @@
     background-image: url("background1.jpg");
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+div.education {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.education:hover {
+    border: 1px solid #777;
+}
+
+div.education img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 8px solid violet;
+    position: relative;
+    left: 30px;
+    width:350px;
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery2 {
+    margin: 5px;
+    border: 8px solid violet;
+    position: relative;
+    left: 100px;
+    width: 350px;
+}
+
+
+div.gallery2 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc2 {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery3 {
+    margin: 5px;
+    border: 8px solid violet;
+    position: relative;
+    left: 30px;
+    width: 350px;
+}
+
+
+div.gallery3 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc3 {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery4 {
+    margin: 5px;
+    border: 8px solid violet;
+    position: relative;
+    left: 30px;
+    width: 350px;
+}
+
+
+div.gallery4 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc4 {
+    padding: 15px;
+    text-align: center;
+}
 </style>
 
 </head>
 <body>
-    <h1 class="mainheading">Education Details</h1>
+
+    <ul>
+    <li><a href="cv_page3.html">Next</a></li>
+    <li><a href="cv_page1.html">Back</a></li>
+    <li><a href="homepage.html">home</a></li>
     
-    <p><strong>Primary School:</strong>St Johns GNS</p>
+    </ul
+    
+    <h1 class="mainheading">Education</h1>
+    
+     <div class="education">
+  <a href="learning.png">
+    <img src="learning.png" alt="education" width="300" height="200">
+  </a>
+  
+    </br>
+    </br>
+    </br>
+    </br>
+    
+   <div class="gallery">
+  <a target="_blank" href="primary school.png">
+    <img src="primary school.png" alt="primaryschool" width="600" height="400">
+  </a>
+  <div class="desc"><p><strong>Primary School:</strong>St Johns GNS</p>
     <p><strong>Address:</strong> Ballea Road</p>
-    <p><strong>Year:</strong>2003-2005, 2008-2011</p>
+    <p><strong>Year:</strong>2003-2005, 2008-2011</p></div>
+</div>
     
-    <br/>
-    
-    <p><strong>Primary School:</strong>Jubilee-Queensland, Australia</p>
+     <div class="gallery2">
+  <a target="_blank" href="australia.png">
+    <img src="australia.png" alt="primaryaustralia" width="600" height="400">
+  </a>
+  <div class="desc2"><p><strong>Primary School:</strong>Jubilee-Queensland, Australia</p>
     <p><strong>Address:</strong> Gold Coast</p>
-    <p><strong>Year:</strong>2005-2008</p>
+    <p><strong>Year:</strong>2005-2008</p></div>
+</div>
     
-    <br/>
-    
-    <p><strong>Secondary School:</strong> Carrigaline Community School</p>
+     <div class="gallery3">
+  <a target="_blank" href="secondary.png">
+    <img src="secondary.png" alt="secondary" width="600" height="400">
+  </a>
+  <div class="desc3"><p><strong>Secondary School:</strong> Carrigaline Community</p>
     <p><strong>Address:</strong> Waterpark, Carrigaline, Cork</p>
     <p><strong>Phone:</strong> 026558595</p>
-    <p><strong>Year:</strong> 2011-2017</p>
+    <p><strong>Year:</strong> 2011-2017</p></div>
+</div>
     
-    <br/>
-    
-    <p><strong>College:</strong> University College Cork</p>
+     <div class="gallery4">
+  <a target="_blank" href="education.png">
+    <img src="education.png" alt="college" width="600" height="400">
+  </a>
+  <div class="desc4"><p><strong>College:</strong> University College Cork</p>
     <p><strong>Course:</strong> BIS</p>
-    <p><strong>Year:</strong> 2017-2021</p>
-    
-    <a href="cv_page3.html">Next</a>
-    <a href="cv_page1.html">Back</a>
-    <a href="homepage.html">home</a>
+    <p><strong>Year:</strong> 2017-2021</p></div>
+</div>
+ 
 </body>
 
 </html>
