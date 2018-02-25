@@ -5,98 +5,68 @@
     <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
     
     <!--Adding Bootstrap-->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
 <style>
+  .bg-1 { 
+      background-color: Wheat;
+      color: #778899;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
   
-body {
-    background-image: url("background1.jpg");
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-
-div.ucc {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.ucc:hover {
-    border: 1px solid #777;
-}
-
-div.ucc img {
-    width: 100%;
-    height: auto;
-}
-
-</style>
+  .bg-4 { 
+      background-color: violet;
+      color: #555555;
+  }
+  
+  .bg-4 { 
+      background-color: Wheat;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+  </style>
 </head>
 <body>
- 
-   <ul>
-       
-  <li><a href="homepage.html">Home</a></li>
-  <li><a href="cv_page2.html">next</a></li>
-  <li><a href="interests/sport">interests</a></li>
 
-</ul>
-    
-    </br>
-    </br>
-    
-     <h1 class="mainheading"><strong>CV</strong></h1>
-    
-    <div class="profile">
-  <a href="profile.jpg">
-    <img src="profile.jpg" alt="profile" width="300" height="200">
-  </a>
-  
+<div class="container-fluid bg-1 text-center">
+  <h3>CV</h3>
+  <img src="profile.jpg" class="profile.jpg" alt="profile" width="400" height="400">
+  <h3>Roisin Murray</h3>
 </div>
- 
-    </br>
-    </br>
-    
-    
-<h2 style="background-color: violet;">PERSONAL QUALITIES</h2>
-<p>Quick learner, Reliable, Punctual, Friendly</p>
 
-<h2 style="background-color: violet;">SKILLS</h2>
-<p>LANGUAGES: German and Irish completed to Leaving Cert Higher Level</p>
+<div class="container-fluid bg-2 text-center">
+  <h3>PERSONAL QUALITIES,SKILLS</h3>
+  <p>Quick learner, Reliable, Punctual, Friendly.LANGUAGES: German and Irish completed to Leaving Cert Higher Level</p>
+</div>
 
-<h2 style="background-color: violet;">WHY I CHOOSE BIS</h2>
-<p>Tokyo is the capital of Japan.</p>
+<div class="container-fluid bg-3 text-center">
+  <h4>WHY I CHOOSE BIS</h4>
+  <p>I choose bis for many reasons ....</p>
+</div>
 
-<h2 style="background-color: violet;">ACHIEVEMENTS</h2>
-<p>Received six principle awards for hard work and pleasant manner.
+<div class="container-fluid bg-4 text-center">
+  <h5>ACHIEVEMENTS</h5>
+  <p>Received six principle awards for hard work and pleasant manner.
     Achieved 456 points in the leaving cert in 2017
     Passed my driving test in April 2016
     received a bronze Gaisce president’s award in 2015 volunteered with a program called fast friends where we helped teenagers with learning disabilities 
@@ -105,14 +75,12 @@ div.ucc img {
     Won two Munster and county football final with my secondary school in 2013 and 2014
     Won all Ireland medal with county football team in 2014
 </p>
+</div>
 
-<h2 style="background-color: violet;">INTERPERSONAL</h2>
-<p>Works great as part of a team and excellent communicator 
-    Quick learner, Reliable, Punctual, Friendly</p>
+<div class="container-fluid bg-5 text-center">
 
-  
-    
-    <p1><strong>Contact Number:</strong> 026558965</p1>
+  <h6>Peronsal information</h6>
+  <p><p1><strong>Contact Number:</strong> 026558965</p1>
 
     <p><strong>Personal email address:</strong> rmurray1234@gmail.com</p>
     
@@ -121,8 +89,7 @@ div.ucc img {
     <p><strong>Social media:</strong> 1128394h34@umail.ucc.ie</p>
     
     <p><strong>DOB:</strong> 13.08.98</p>
-    
-    
-</body>
+</div>
 
+</body>
 </html>
