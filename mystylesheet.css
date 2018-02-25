@@ -2,6 +2,23 @@
     text-align: center;
     
 }
+
+.mainheading{
+    text-shadow: 3px 2px Violet;
+}
+  
+.mainheading{
+    font-size: 60px;
+}
+ 
+.mainheading{
+    font-family: "ArialVerdana", Sans-serif;
+}
+
+.mainheading{
+    color: green;
+}
+
  
 .center1 {
     position: absolute;
@@ -116,11 +133,15 @@ li a {
     text-decoration: none;
 }
 
+li {
+    font-size: 50px;
+}
+
 div.ucc {
-    margin: 5px;
+    margin: 10px;
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    float: right;
+    width: 400px;
 }
 
 div.ucc:hover {
