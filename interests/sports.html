@@ -1,47 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <style>
-body {
-    background-image: url("background1.jpg");
-}
-
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-</style>
+       
+        <!--applying pagepiling-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+        
+        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="intereststyle.css" type="text/css" />
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+            	$('#pagepiling').pagepiling();
+            });
+        </script>
+        
+    
         <title>
             SPORTS
         </title>
@@ -49,16 +24,21 @@ li a:hover {
     </head>
     <body>
         
-        <ul>
-    <li><a href="travel.html">Next</a></li>
-    <li><a href="../homepage.html">home</a></li>
-    
-    </ul
-    
         
-            <h1><strong>Favourite Sports</strong></h1>
+        <div id="pagepiling">
+        	<div class="section" id="section5">
+        	    <h1><strong>HOBBIES/SPORTS</strong></strong></h1>
+            <P>I have many hobbies and interest one being a great interest in sport and exercise
+            ,while another is a great interest in fashion.</P>
+        	</div>
+        	
+        	<div class="section" id="section6"> <h2>Sport & Exercise</h2>
             
             <p><strong>Name of sport:</strong>Football</p>
+            
+            <iframe width="420" height="345" src="https://www.youtube.com/watch?v=Z1WhbSiW0wc">
+</iframe>
+            
             
             <p><strong>Training:</strong>twice during the weekdays and once at the weekend</p>
             
@@ -69,7 +49,20 @@ li a:hover {
   <p>won three Sciath na Scol finals with St.John National Girls School</p>
   <p>Won two Munster and county football final with my secondary school in 2013 and 2014</p>
   <p>Won all Ireland medal with county football team in 2014</p>
-  
+  </div>
+        	
+        	<div class="section" id="section7"><h1>Kick Boxing</h1>
+        	
+        	<p>Kickboxing is a group of stand-up combat sports based on kicking and punching, 
+        	historically developed from Karate but the modern kickboxing is mixed by taekwondo 
+        	and boxing.	</p></div>
+        	 
+        	<div class="section" id="section8"><a href="travel.html">Next</a>   <li><a href="../homepage.html">home</a></li>   
+        	 </div>
+        
+        
+        
+   
 
     </body>
 </html>
