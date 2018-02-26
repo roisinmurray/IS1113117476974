@@ -5,78 +5,280 @@
     <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
     
     <!--Adding Bootstrap-->
-    
+  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-     <style>
-     
-    body {
-    background-image: url("background1.jpg");
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-</style>
+       <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+    
 
 </head>
-<body>
-    
-        <ul>
-  <li><a href="cv_page2.html">Back</a></li>
-  <li><a href="homepage.html">Home</a></li>
- 
-</ul>
 
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        
+      </button>
+      
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cv_page2.html">back</a></li>
+        <li><a href="homepage.html">home</a></li>
+       
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="KART1.jpg" alt="KART1" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Kartmania</h3>
+          <p>GP Business park, Little Island, Cork</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="KART2.jpg" alt="KART2" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Kartmania</h3>
+          <p>GP Business park, Little Island, Cork</p>
+        </div>      
+      </div>
     
-    <h1 class="mainheading">Work Experience</h1>
-    
-    <p><strong>Company:</strong> Kartmania</p>
+      <div class="item">
+        <img src="KART3.jpg" alt="KART3" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Kartmania</h3>
+          <p>GP Business park, Little Island, Cork</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Back</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>WORK EXPERIENCE</h3>
+  
+  <p><strong>Company:</strong> Kartmania</p>
     <p><strong>Job Title:</strong> Receptionist</p>
     <p><strong>Time Period:</strong> 2015-Present</p>
-    <p><strong>Role:</strong> </p>
+    <p><strong>Role:</strong> 
     <p>-Handling Cash and Card Transitions</p>
     <p>-In charge of cashing up the till and the end of the day</p>
     <p>-Ordering stock and completing stock intake</p>
     <p>-Open and close the building on a regular basis</p>
     <p>-Cleaning and maintaining building</p>
-   
-    </br>
-    
-    <p><strong>Company:</strong> DPS Engineering</p>
-    <p><strong>Time Period:</strong> March 1st–5th 2015</p>
-    <p><strong>Role:</strong></p> 
-    <p>-I followed a work experience program each day</p>
-    <p>-I was assigned to different offices where I learned about each type of engineering</p>
-    <p><strong>Comment:</strong></p>
-    <p>-This was very interesting it gave me a greater insight into the day to day working life of an engineer.</p>
-    
-    
-</body>
+   </p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#demo" data-toggle="collapse">
+        <img src="MONEY.jpg" class="img-circle person" alt="MONEY" width="255" height="255">
+     </a>
+      <div id="demo2" class="collapse">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
 
+      <a href="#demo2" data-toggle="collapse">
+        <img src="PHONE.jpg" class="img-circle person" alt="PHONE" width="255" height="255"></a>
+      <div id="demo2" class="collapse">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+
+     
+
+<a href="#demo2" data-toggle="collapse">
+        <img src="CLEAN.jpg" class="img-circle person" alt="CLEAN" width="255" height="255">
+      
+      
+</body>
 </html>
+
+
 
