@@ -4,11 +4,11 @@
 }
 
 .mainheading{
-    text-shadow: 3px 2px Violet;
+    text-shadow: 6px 4px DarkGrey;
 }
   
 .mainheading{
-    font-size: 60px;
+    font-size: 80px;
 }
  
 .mainheading{
@@ -16,7 +16,7 @@
 }
 
 .mainheading{
-    color: green;
+    color: DarkSlateBlue;
 }
 
  
@@ -74,12 +74,12 @@
 
 /* unvisited link */
 a:link {
-    color: yellow;
+    color: Wheat;
 }
 
 /* mouse over link */
 a:hover {
-    color: hotpink;
+    color: Plum;
 }
 
 
@@ -118,7 +118,7 @@ ul {
     margin:0;
     padding: 0;
     overflow: hidden;
-    background-color: violet;
+    background-color: DarkGrey;
 }
 
 li {
@@ -139,7 +139,7 @@ div.ucc {
     margin: 10px;
     border: 1px solid #ccc;
     float: right;
-    width: 400px;
+    width: 300px;
 }
 
 div.ucc:hover {
