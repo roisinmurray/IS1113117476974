@@ -31,31 +31,28 @@ session_start();
             <form method = "POST" action = "Ebus3.php">
                 
                 <label for="user_pin">
-                     PIN 
+                     PIN: 
                 </label>
                 
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
                 
+        </br>
+        </br>
                 
-                
-                
-                <label for="email">
-                     EMAIL
+  <label for="user_name">
+                    Name:
                 </label>
-                
-                <input type="text" id="user_email" placeholder="email" >
-                
-                
-                
-                <label for="name">
-                     NAME 
-                </label>
-                
-                <input type="text" id="user_name" placeholder="name" >
-                
-                
-                
                     
+                <input type="text" id="user_name" placeholder="Name" required>
+                <br/>
+                <br/>
+                <label for="user_email">
+                    Email:
+                </label>
+                
+                <input type="text" id="user_email" placeholder="email" required>
+                <br/>
+                <br/> 
                 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
@@ -65,16 +62,18 @@ session_start();
             <br />
             
             <button onClick="validateDetails()"> Validate </button>
-            
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
         <?php
-            // Sat session variables
-            $_SESSION["total"] = $_POST["total"];
-            $_SESSION["name"] = $_POST["name"];
-            $_SESSION["email"] = $_POST["email"];
-            ?>
+        //Set session variables
+        $_SESSION["subtotal"] = $_POST["subtotal"];
+        $_SESSION["VAT"] = $_POST["VAT"];
+        $_SESSION["discount"] = $_POST["discount"];
+        $_SESSION["total"] = $_POST["total"];
+        ?>
+    </div> 
+
     </body>
     
     

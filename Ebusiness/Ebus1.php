@@ -24,57 +24,57 @@
             
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" Checked onClick="disablebtnProceed()"/>
-                SalesForce @ $100
+                SalesForce @ &euro; 100
             </label>
             
             <br/>
             
              <label for="cloud9">
                 <input type="radio" id="cloud9" name="product" Checked onClick="disablebtnProceed()"/>
-                cloud9 @ $200
+                cloud9 @ &euro; 200
             </label>
             
             <br/>
             
              <label for="amazon web service">
                 <input type="radio" id="amazon web service" name="product" Checked onClick="disablebtnProceed()"/>
-                amazon web service @ $300
+                amazon web service @ &euro; 300
             </label>
             
             <br/>
             
              <label for="gmail">
                 <input type="radio" id="gmail" name="product" Checked onClick="disablebtnProceed()"/>
-                gmail @ $400
+                gmail @ &euro; 400
             </label>
             
             <br/>
             <br/>
             
             <label for="subtotal">
-                Sub Total
-                <input type="text" id="subtotal" value="0.00" readonly/>
+                Sub Total:
+                <input type="text" id="subtotal" name="subtotal" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            
+            <label for="VAT">
+                VAT:
+                <input type="text" id="VAT" name="VAT" value="0.00" readonly/>
             </label>
             
             <br/>
             
             <label for="discount">
-                discount @ 5%
-                <input type="text" id="discount" value="0.00" readonly/>
-            </label>
-            
-            <br/>
-            
-            <label for="vat">
-                vat @ 10%
-                <input type="text" id="vat" value="0.00" readonly/>
+                discount:
+                <input type="text" id="discount" name="discount" value="0.00" readonly/>
             </label>
             
             <br/>
             
             <label for="total">
                 Total
-                <input type="hidden" id="total" name="total" value="0.00" />
+                <input type="hidden" id="total" name="total" value="0.00" readonly/>
             </label>
             
             <br/>
