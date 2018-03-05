@@ -10,7 +10,7 @@ function validateDetails(){
     name = document.getElementById("user_name").value;
     email = document.getElementById("user_email").value;
     
-    if (pin==""||name==""||email==""||){
+    if (pin==""||name==""||email==""){
         alert("Please enter your details");
         }
     else if (String(pin).length<4){

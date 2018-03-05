@@ -8,16 +8,16 @@ function calcSub(){
         argSubTotal = 100;
     }
     
+    else(document.getElementById('gmail').checked) {
+        argSubTotal = 400;
+    }
+    
     else(document.getElementById('cloud9').checked) {
         argSubTotal = 200;
     }
     
-    else(document.getElementById('amazon web service').checked) {
-        argSubTotal = 300;
-    }
-    
-    else
-    argSubTotal = 400;
+    else{
+    argSubTotal = 300;
     }
     
     display(argSubTotal);
@@ -43,9 +43,9 @@ function calcDisVATTotal(parmSubTotal){
 function display(parm1,parm2,parm3,parm4){
     
     document.getElementById("subtotal").value = parm1;
-    document.getElementById("total").value = parm4;
-    document.getElementById("vat").value = parm3;
     document.getElementById("discount").value = parm2;
+    document.getElementById("VAT").value = parm3;
+    document.getElementById("total").value = parm4;
     
     enablebtnProceed();
 }
