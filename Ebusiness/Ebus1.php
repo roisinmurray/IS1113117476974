@@ -14,6 +14,14 @@
     body {
     background-image: url("paper.jpg");
 } 
+.form {
+    text-align: center;
+}
+
+.label {
+    text-align: center;
+}
+
     </style>
     
         <h4>Select a Product</h4>

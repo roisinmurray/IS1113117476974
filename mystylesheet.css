@@ -72,17 +72,13 @@
     font-family: "Times New Roman", Times, serif;
 }
 
-/* unvisited link */
 a:link {
     color: Wheat;
 }
 
-/* mouse over link */
 a:hover {
     color: Plum;
 }
-
-
   
 body {
     background-image: url("brick.jpg");
