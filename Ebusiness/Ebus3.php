@@ -1,4 +1,5 @@
 <?php
+//Start the session
 session_start();
 ?>
 <!DOCTYPE html>
@@ -9,18 +10,72 @@ session_start();
         <style>
         
     body {
-    background-image: url("paper.jpg");
+    background-image: url("background1.jpg");
 } 
+
+ form {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    font-size: 30px;
+    color: DarkGrey;
+    
+}
+
+h {
+    text-align: center;
+    font-size: 35px;
+    color: DarkSlateBlue;
+    
+}
+
+label
+{
+    text-align: center;
+    font-size: 25px;
+    color: DarkGrey;
+}
+
+
+
+button{
+    text-align: center;
+    font-size: 25px;
+    color: White;
+    background-color: Wheat;
+}
+
+li{
+       text-align: center;
+    font-size: 30px;
+    color: Plum;
+   float: right;
+}
     </style>
     </head>
    <body>
-       <h4>RECEIPT</h4>
+                 <link rel="stylesheet" href="/mystylesheet.css" type="text/css" />
+
+<li><a href="../homepage.html">HOME</a></li>
+<br>
+<br>
+<br>
+        <div id="receipt">
+             <h>Here is your receipt</h> 
+<br>
        
-       <?PHP
-       //Echo seesion variables that were set on previous page
-       echo "total is " . $_SESSION["total"] . ".";
-       echo "name is " . $_SESSION["name"] . ".";
-       echo "email is " . $_SESSION["email"] . ".";
-       ?>
+      <?php
+            //Echo session variables that were set on previous page
+            echo "Subtotal is " . $_SESSION["subtotal"]; ?>
+            <br/>
+           <?php echo "VAT is " . $_SESSION["VAT"]; ?>
+            <br/>
+           <?php echo "Discount is " . $_SESSION["discount"]; ?>
+            <br/>
+            <?php echo "Total is " . $_SESSION["total"] . "."; ?>
+        </div>   
+
    </body>
 </html>

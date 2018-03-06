@@ -1,0 +1,30 @@
+form {
+    text-align: center;
+}
+
+h {
+    text-align: center;
+    font-size: 30px;
+    color: DarkSlateBlue;
+    
+}
+
+label
+{
+    text-align: center;
+    font-size: 25px;
+    color: DarkGrey;
+}
+
+a{
+    text-align: center;
+    font-size: 30px;
+    color: Plum;
+}
+
+button{
+    text-align: center;
+    font-size: 25px;
+    color: White;
+    background-color: Wheat;
+}

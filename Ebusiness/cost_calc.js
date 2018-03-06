@@ -1,30 +1,30 @@
-/* global $ */
+    /* global $ */
 
 function calcSub(){
     
     var argSubTotal;
     
-    if(document.getElementById('salesforce').checked) {
-        argSubTotal = 100;
+    if(document.getElementById('salesforce').checked){
+      argSubTotal = 100;
     }
     
-    else(document.getElementById('gmail').checked) {
+    else if(document.getElementById('gmail').checked){
         argSubTotal = 400;
     }
     
-    else(document.getElementById('cloud9').checked) {
+    else if(document.getElementById('cloud9').checked){
         argSubTotal = 200;
     }
     
     else{
-    argSubTotal = 300;
+        argSubTotal = 300;
     }
-    
+
     display(argSubTotal);
     calcDisVATTotal(argSubTotal);
 }
-
-function calcDisVATTotal(parmSubTotal){
+   
+   function calcDisVATTotal(parmSubTotal){
        
        var SubTotal;
        var discountAmt;
@@ -39,17 +39,15 @@ function calcDisVATTotal(parmSubTotal){
        display(SubTotal, discountAmt, VATAmt, totalAmt);
    }
 
-
-function display(parm1,parm2,parm3,parm4){
-    
-    document.getElementById("subtotal").value = parm1;
-    document.getElementById("discount").value = parm2;
-    document.getElementById("VAT").value = parm3;
-    document.getElementById("total").value = parm4;
-    
-    enablebtnProceed();
-}
-    
+    function display(parm1, parm2, parm3, parm4){
+        
+        document.getElementById("subtotal").value = parm1;
+        document.getElementById("discount").value = parm2;
+        document.getElementById("VAT").value = parm3;
+        document.getElementById("total").value = parm4;
+        
+        enablebtnProceed();
+    }
     
     
     function enablebtnProceed(){
@@ -59,8 +57,7 @@ function display(parm1,parm2,parm3,parm4){
     function disablebtnProceed(){
         $('#btnProceed').prop('disabled', true);
     }
-    
-    
+
     
     
     

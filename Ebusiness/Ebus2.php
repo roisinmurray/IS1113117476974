@@ -18,28 +18,69 @@ session_start();
     body {
     background-image: url("paper.jpg");
 } 
+
+form {
+    text-align: center;
+}
+
+h {
+    text-align: center;
+    font-size: 30px;
+    color: DarkSlateBlue;
+    
+}
+
+label
+{
+    text-align: center;
+    font-size: 25px;
+    color: DarkGrey;
+}
+
+a{
+    text-align: center;
+    font-size: 30px;
+    color: Plum;
+}
+
+button{
+    text-align: center;
+    font-size: 25px;
+    color: White;
+    background-color: Wheat;
+}
+
+li{
+       text-align: center;
+    font-size: 30px;
+    color: Plum;
+   float: right;
+}
+
     </style>
     
     </head>
     
     <body>
+        <li><a href="../homepage.html">HOME</a></li>
+        <br>
+        <br>
+        <br>
+        <h>Please enter your payment details</h>
         
-        <h4>Please enter your payment details.</h4>
-        
-            <br />
+            <br>
+            <br>
             
             <form method = "POST" action = "Ebus3.php">
                 
                 <label for="user_pin">
-                     PIN: 
+                     PIN:
                 </label>
                 
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                
-        </br>
-        </br>
-                
-  <label for="user_name">
+                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4" required>
+                <br/>
+                <br/>
+                <label for="user_name">
                     Name:
                 </label>
                     
@@ -56,13 +97,11 @@ session_start();
                 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
-                
-            </form>
-            
-            <br />
+         
+            <br>
             
             <button onClick="validateDetails()"> Validate </button>
-        
+        </form>
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
         <?php
@@ -73,6 +112,7 @@ session_start();
         $_SESSION["total"] = $_POST["total"];
         ?>
     </div> 
+    
 
     </body>
     
