@@ -26,22 +26,41 @@
       text-align:center;
 } 
  
- #section6{
-    background-image: url("bacckground1.jpg");
-      text-align:center;
-}
+ 
     
 #section7{
      background-color: LightGrey;
       text-align:center;
 }
 
+
+
 #section8{
-       background-color: Wheat;
+       background-image: url("brick.jpg");
       text-align:center;
 }
 
-#section9{
-       background-image: url("brick.jpg");
-      text-align:center;
+.h2 {
+    text-align: center;
+    font : 40px;
+    color: DarkSlateBlue;
+}
+
+.h1 {
+    text-align: center;
+    font : 30px;
+    color: DarkSlateBlue;
+}
+
+.p1 {
+    text-align: center;
+    font : 40px;
+    color: DarkGrey;
+    background-color: Wheat;
+}
+
+.p {
+    text-align: center;
+    font : 50px;
+    color: DarkGrey;
 }

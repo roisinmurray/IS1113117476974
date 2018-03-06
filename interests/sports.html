@@ -26,17 +26,83 @@
               color: DarkSlateBlue;
           }  
           
+          ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: Wheat;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
          
         </style>
     </head>
     <body>
         <div id="pagepiling">
-        	<div class="section" id="section5">
-        
-            <h1>Hobbies & Sports</h1>
-        	</div>
+            <ul>
+  
+  <li><a href="Ebusiness/shop.html">MY SHOP</a></li>
+  <li><a href="travel.html">Next</a></li>   
+  <li><a href="../homepage.html">home</a></li> 
+  <li><a href="interests/CloudServices.html">CLOUD SERVICES</a></li>
+  
+  <li class="dropdown">
+    <a>CV</a>
+    <div class="dropdown-content">
+      <a href="cv/cv_page1.html">PERSONAL INFO</a>
+      <a href="cv/cv_page2.html">EDUCATION</a>
+      <a href="cv/cv_page3.html">WORK EXPERINCE</a>
+    </div>
+    </li>
+    
+    
+  </li>
+</ul>
+        	<div class="section" id="section5"><h1>Hobbies & Sports</h1></div>
         	
-        	<div class="section" id="section6"> <h2>Sport & Exercise</h2>
+        	<div class="section" id="section4"> <h2>Sport & Exercise</h2>
             
             <p><strong>Name of sport:</strong>Football</p>
             
@@ -67,18 +133,12 @@
         	<a img src="Kickboxing.jpg" alt="Kickboxing" width="300" height="200"></a>
         	</div>
         	
-    	<div class="section" id="section8"></div>
-        	 <h1>I have a great interest in fashion!!</h1>
-        	 <p></p>
+    	<div class="section" id="section8"><h1>Interest in fashion!!</h1>
+        
+        	 <p>i ENJOY </p>
         	 <a img src="sewing.jpg" alt="sewing" width="300" height="200"></a>
         	 <a img src="buttons.jpg" alt="buttons" width="300" height="200"></a>
-        	 
-        	<div class="section" id="section9"><a href="travel.html">Next</a>   <li><a href="../homepage.html">home</a></li>   
         	 </div>
-        
-        
-        
-   
 
     </body>
 </html>
