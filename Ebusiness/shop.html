@@ -144,17 +144,31 @@ p2 {
     text-align: center;
 }
 
-.dropbtn {
-    background-color: DarkGrey;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.dropdown {
-    position: relative;
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: DarkSlateBlue;
+}
+
+li.dropdown {
     display: inline-block;
 }
 
@@ -168,10 +182,11 @@ p2 {
 }
 
 .dropdown-content a {
-    color: black;
+    color: Wheat;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -179,22 +194,11 @@ p2 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-.dropdown:hover .dropbtn {
-    background-color: DarkGrey;
-}
-
-.p2 {
-    color: DarkSlateBlue;
-    font-size: 30px;
-}
-
     </style>
     
     </head>
     
     <body>
-        
         
 <ul>
   <li><a href="https://dashboard.heroku.com/apps/is117476974">HEROKUAPP</a></li>
@@ -222,94 +226,63 @@ p2 {
 </ul>
 
         <h1>Welcome to my shop </h1>
-        <p1>I am a Cloud Services vendor, who supplies the 
+        <p1>I am a Cloud Services vendor,I supply the 
         latest of Cloud offerings to the market. If you are interested in buying 
-        any of these products, please link on the button below.</p1>
-        </br>
-        </br>
-        </br>
+        any of these products, please click on the button below.</p1>
+        <br>
+        <br>
+        <br>
         <a href="Ebus1.php" class="button">BUY NOW</a>
-        </br>
-        </br>
+        <br>
+        <br>
         
           <div class="gallery">
   <a target="_blank" href="salesforce">
     <img src="salesforce.jpg" alt="sales" width="400" height="200">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">SaaS</div>
-    <p2>Software as a service (or SaaS; pronounced /sæs/) is a way of delivering
-    centrally hosted applications over the Internet—as a service. SaaS applications
-    are sometimes called web-based software, on-demand software, or hosted software. 
-    Whatever the name, SaaS applications run on a SaaS provider’s servers.
-    Instead of installing and maintaining software, you simply access it via the Internet,
+  <div class="desc"><h2 style="background-color: Wheat;">SaaS (software as a service)</div>
+    <p2>Software as a service is a way of delivering hosted applications over the Internet as a service. 
+    SaaS applications are sometimes called web-based software or hosted software. 
+    Its applications run on a SaaS provider’s servers. You simply access it via the Internet,
     freeing yourself from complex software and hardware management. The provider manages 
-    access to the application, including security, availability, and performance. SaaS business
-    applications are usually accessed by users using a thin client via a web browser.
-</p2>
-
-<h>What are the Advantages of SaaS? </h>
-     
+    access to the application, including security, availability, and performance. Adv:
 
     <p2>High adoption</p2>
     <p2>Lower initial costs</p2>
     <p2>Lower initial costs</p2>
-    <p2>Seamless integration</p2>
     
- 
-    
-    <h>SaaS Characteristics </h>
-    <p2>A good way to understand the SaaS model is by thinking of a bank, which 
-    protects the privacy of each customer while providing service that is reliable 
-    and secure—on a massive scale. A bank’s customers all use the same financial 
-    systems and technology without worrying about anyone accessing their personal 
-    information without authorization.</p2>
     </div>
-    
-    
-     
-     
-             
+    <br>
+
           <div class="gallery2">
   <a target="_blank" href="cloud9.jpg">
-    <img src="cloud9.jpg" alt="cloud" width="400" height="400">
+    <img src="cloud9.jpg" alt="cloud" width="400" height="200">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">PaaS (Platform as a Service)
-  </h2></div>
+  <div class="desc"><h2 style="background-color: Wheat;">PaaS (Platform as a Service)</h2></div>
     <p2>In the PaaS model: cloud9 provides a computing platform and solution stack 
     typically including operating system, programming language execution environment, 
-    database, and web server. Application developers can develop and run their software 
-    solutions on a cloud platform without the cost and complexity of buying and managing 
-    the underlying hardware and software layers. With some PaaS offers, the underlying 
-    compute and storage resources scale automatically to match application demand such 
-    that the cloud user does not have to allocate resources manually.</p2>
+    database, and web server. </p2>
     </br>
-<h>What are the Advantages ?</h>
-     
-
-    <h>SaaS Characteristics </h>
+    
+    <p2>SaaS Characteristics </p2>
     <p2>A good way to understand the SaaS model is by thinking of a bank, which protects 
     the privacy of each customer while providing service that is reliable and secure—on a 
     massive scale. A bank’s customers all use the same financial systems and technology 
     without worrying about anyone accessing their personal information without authorization.</p2>
     
-    <p2>Fast performance – Powered by future proof technology built for reliability and scalability</p2>
-    <p2>DR (Disaster Recovery) –High availability of your cloud solution and data from any location.
-    The ability to be up and running in hours rather than days in the event of a catastrophe disaster.
-    Full site to site replication of all cloud solutions and data ensuring your solution is always available</p2>
-    <p2>Reduced Costs–High availability of your cloud solution and data from any location.
-    Reduced business insurance premiums,
-    Reduce capital expenditure no up-front setup costs compared to in-house
-    Reduce in-house utility costs of running servers</p2>
+    <p2>Fast performance </p2>
+    <p2>DR (Disaster Recovery) </p2>
+    <p2>Reduced Costs</p2>
     
 
     </div>
-
+<br>
                
          <div class="gallery3">
-  <a target="_blank" href="amazon.jpg">
-    <img src="amazon.jpg" alt="amazon" width="400" height="400">
+  <a target="_blank" href="amazon1.jpg">
+    <img src="amazon1.jpg" alt="amazon" width="400" height="200">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">laaS</h2></div>
+  <div class="desc"><h2 style="background-color: Wheat;">IaaS (Infrastructure as a service)</h2></div>
   <p2>These compelling benefits are just some of the key factors to what
   makes IaaS “Infrastructure as a Service” cloud technology revolutionary
   over traditional in-house solutions. Your business can reduce its IT 
@@ -317,63 +290,49 @@ p2 {
   the latest innovations in technology to adopt and deploy new capabilities
   more quickly, smoothly, cost effectively and efficiently!</p2>
      
-    <h>IaaS architecture and how it works</h> 
+    <p2>IaaS architecture and how it works</p2> 
 
 <p2>In an IaaS model, a cloud provider hosts the infrastructure components 
 traditionally present in an on-premises data center, including servers, storage
 and networking hardware, as well as the virtualization or hypervisor layer.
-
-The IaaS provider also supplies a range of services to accompany those 
-infrastructure components. These can include detailed billing, monitoring, 
-log access, security, load balancing and clustering, as well as storage resiliency,
-such as backup, replication and recovery. These services are increasingly policy-driven,
-enabling IaaS users to implement greater levels of automation and orchestration for 
-important infrastructure tasks. For example, a user can implement policies to drive
-load balancing to maintain application availability and performance.
   </p2>   
     </div>
   
-     
-
+  <br>
+  
        <div class="gallery4">
   <a target="_blank" href="gmail.png">
-    <img src="gmail.png" alt="gmail" width="400" height="400">
+    <img src="gmail.png" alt="gmail" width="400" height="200">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">Communications as a Service (CaaS)</h2></div>
+  <div class="desc"><h2 style="background-color: Wheat;">CaaS (Communications as a Service)</h2></div>
   
-  <p2>Communications as a Service (CaaS) is an outsourced enterprise communications solution
+  <p2>Communications as a Service is an outsourced enterprise communications solution
   that can be leased from a single vendor. Such communications can include voice over IP 
-  (VoIP or Internet telephony), instant messaging (IM), collaboration and videoconference
+  , instant messaging, collaboration and videoconference
   applications using fixed and mobile devices. CaaS has evolved along the same lines as Software
-  as a Service (SaaS).
+  as a Service.
 
 The CaaS vendor is responsible for all hardware and software management and offers guaranteed 
-Quality of Service (QoS). CaaS allows businesses to selectively deploy communications devices 
-and modes on a pay-as-you-go, as-needed basis. This approach eliminates the large capital investment
-and ongoing overhead for a system whose capacity may often exceed or fall short of current demand.
-
-CaaS offers flexibility and expandability that small and medium-sized business might not otherwise 
-afford, allowing for the addition of devices, modes or coverage on demand. The network capacity and
-feature set can be changed from day to day if necessary so that functionality keeps pace with demand
-and resources are not wasted. There is no risk of the system becoming obsolete and requiring periodic
-major upgrades or replacement.</p2>
+Quality of Service. CaaS allows businesses to selectively deploy communications devices 
+and modes on a pay-as-you-go, as-needed basis. 
+</p2>
     
   </div>
 
-  </br>
-  </br>
-  </br>
-  <p><strong>If additional information is requested, feel free to contact me through the 
-  following platforms</strong></p>
-  </br>
-  
-  <ul1>
-    <li><strong>Contact Number:</strong> 086******</li>
-</br>
-    <li><strong>Personal email address:</strong> rmurayyy1234@gmail.com</li>
-    </br>
-    <li><strong>Business email address:</strong> 112384594h34@umail.ie</li>
-</ul1>
+  <br>
+  <br>
+  <br>
+  <h1><strong>If additional information is requested, feel free to contact me through the 
+  following platforms</strong></h1>
+  <br>
+    <p1><strong>Contact Number:</strong> 086******</p1>
+<br>
+<br>
+    <p1><strong>Personal email address:</strong> rmurayyy1234@gmail.com</p1>
+    <br>
+    <br>
+    <p1><strong>Business email address:</strong> 112384594h34@umail.ie</p1>
+
      
      </body>
 </html>
