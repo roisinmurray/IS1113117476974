@@ -12,17 +12,31 @@ body {
     border-bottom: 6px solid Wheat;
     background-color: lightgrey;
 }
-.dropbtn {
-    background-color: DarkGrey;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.dropdown {
-    position: relative;
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
     display: inline-block;
 }
 
@@ -36,20 +50,17 @@ body {
 }
 
 .dropdown-content a {
-    color: black;
+    color: Wheat;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: DarkGrey;
 }
 </style>
 </head>
@@ -63,15 +74,16 @@ body {
   <li><a href="Ebusiness/shop.html">MY SHOP</a></li>
   
   <li class="dropdown">
-    <a href="cv/cv_page1.html" class="dropbtn">CV</a>
+    <a>CV</a>
     <div class="dropdown-content">
       <a href="cv/cv_page1.html">PERSONAL INFO</a>
       <a href="cv/cv_page2.html">EDUCATION</a>
       <a href="cv/cv_page3.html">WORK EXPERINCE</a>
     </div>
+    </li>
     
       <li class="dropdown">
-    <a href="cv/cv_page1.html" class="dropbtn">INTERESTS</a>
+    <a>INTERESTS</a>
     <div class="dropdown-content">
       <a href="interests/sports.html">SPORTS/HOBBBIES</a>
       <a href="interests/travel.html">TRAVEL</a>

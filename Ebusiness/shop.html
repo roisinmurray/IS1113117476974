@@ -24,8 +24,8 @@ div.gallery {
     margin: 10px;
     border: 8px solid Wheat;
     position: relative;
-    left: 30px;
-    width:1000px;
+    left: 300px;
+    width:800px;
 }
 
 
@@ -43,8 +43,8 @@ div.gallery2 {
     margin: 5px;
     border: 8px solid Wheat;
     position: relative;
-    left: 30px;
-    width:1000px;
+    left: 300px;
+    width:800px;
 }
 
 
@@ -62,8 +62,8 @@ div.gallery3 {
     margin: 5px;
     border: 8px solid Wheat;
     position: relative;
-    left: 30px;
-    width:1000px;
+    left: 300px;
+    width:800px;
 }
 
 
@@ -81,8 +81,8 @@ div.gallery4 {
     margin: 5px;
     border: 8px solid Wheat;
     position: relative;
-    left: 30px;
-    width:1000px;
+    left: 300px;
+    width:800px;
 }
 
 
@@ -116,7 +116,7 @@ ul1 {
 
 p2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
     color: DarkSlateBlue;
     Background: LightGrey ;
 }
@@ -143,14 +143,85 @@ p1 {
 p2 {
     text-align: center;
 }
-    </style>
-    <h1>Welcome to my shop </h1>
-    
 
-        
+.dropbtn {
+    background-color: DarkGrey;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: DarkGrey;
+}
+
+.p2 {
+    color: DarkSlateBlue;
+    font-size: 30px;
+}
+
+    </style>
+    
     </head>
     
     <body>
+        
+        
+<ul>
+  <li><a href="https://dashboard.heroku.com/apps/is117476974">HEROKUAPP</a></li>
+  <li><a href="https://github.com/roisinmurray/IS1113117476974">GIT HUB</a></li>
+  <li><a href="../homepage.html">HOME</a></li>
+  
+  <li class="dropdown">
+    <a href="cv/cv_page1.html" class="dropbtn">CV</a>
+    <div class="dropdown-content">
+      <a href="cv/cv_page1.html">PERSONAL INFO</a>
+      <a href="cv/cv_page2.html">EDUCATION</a>
+      <a href="cv/cv_page3.html">WORK EXPERINCE</a>
+    </div>
+    
+      <li class="dropdown">
+    <a href="cv/cv_page1.html" class="dropbtn">INTERESTS</a>
+    <div class="dropdown-content">
+      <a href="interests/sports.html">SPORTS/HOBBBIES</a>
+      <a href="interests/travel.html">TRAVEL</a>
+      <a href="interests/CloudServices.html">CLOUD SERVICES</a>
+    </div>
+    
+    
+  </li>
+</ul>
+
+        <h1>Welcome to my shop </h1>
         <p1>I am a Cloud Services vendor, who supplies the 
         latest of Cloud offerings to the market. If you are interested in buying 
         any of these products, please link on the button below.</p1>
@@ -161,12 +232,12 @@ p2 {
         </br>
         </br>
         
-         <p>  <div class="gallery">
+          <div class="gallery">
   <a target="_blank" href="salesforce">
     <img src="salesforce.jpg" alt="sales" width="400" height="200">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">SaaS</h2>
-    <p>Software as a service (or SaaS; pronounced /sæs/) is a way of delivering
+  <div class="desc"><h2 style="background-color: Wheat;">SaaS</div>
+    <p2>Software as a service (or SaaS; pronounced /sæs/) is a way of delivering
     centrally hosted applications over the Internet—as a service. SaaS applications
     are sometimes called web-based software, on-demand software, or hosted software. 
     Whatever the name, SaaS applications run on a SaaS provider’s servers.
@@ -174,81 +245,81 @@ p2 {
     freeing yourself from complex software and hardware management. The provider manages 
     access to the application, including security, availability, and performance. SaaS business
     applications are usually accessed by users using a thin client via a web browser.
-</p>
+</p2>
+
 <h>What are the Advantages of SaaS? </h>
      
-<ul>
-    <l1>High adoption</l1>
-    <l1>Lower initial costs</l1>
-    <l1>Lower initial costs</l1>
-    <l1>Seamless integration</l1>
+
+    <p2>High adoption</p2>
+    <p2>Lower initial costs</p2>
+    <p2>Lower initial costs</p2>
+    <p2>Seamless integration</p2>
     
-    </ul>
+ 
     
     <h>SaaS Characteristics </h>
-    <p>A good way to understand the SaaS model is by thinking of a bank, which protects the privacy of each customer while providing service that is reliable and secure—on a massive scale. A bank’s customers all use the same financial systems and technology without worrying about anyone accessing their personal information without authorization.</p1>
+    <p2>A good way to understand the SaaS model is by thinking of a bank, which 
+    protects the privacy of each customer while providing service that is reliable 
+    and secure—on a massive scale. A bank’s customers all use the same financial 
+    systems and technology without worrying about anyone accessing their personal 
+    information without authorization.</p2>
+    </div>
     
-    <p></p></div>
-  </div>
-        
+    
      
      
              
-         <p>  <div class="gallery2">
+          <div class="gallery2">
   <a target="_blank" href="cloud9.jpg">
     <img src="cloud9.jpg" alt="cloud" width="400" height="400">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">PaaS (Platform as a Service)</h2>
-    <p>In the PaaS model: OCcloud9 provides a computing platform and/or solution stack 
+  <div class="desc"><h2 style="background-color: Wheat;">PaaS (Platform as a Service)
+  </h2></div>
+    <p2>In the PaaS model: cloud9 provides a computing platform and solution stack 
     typically including operating system, programming language execution environment, 
     database, and web server. Application developers can develop and run their software 
     solutions on a cloud platform without the cost and complexity of buying and managing 
     the underlying hardware and software layers. With some PaaS offers, the underlying 
     compute and storage resources scale automatically to match application demand such 
-    that the cloud user does not have to allocate resources manually.</p>
+    that the cloud user does not have to allocate resources manually.</p2>
     </br>
 <h>What are the Advantages ?</h>
      
 
     <h>SaaS Characteristics </h>
-    <p>A good way to understand the SaaS model is by thinking of a bank, which protects the privacy of each customer while providing service that is reliable and secure—on a massive scale. A bank’s customers all use the same financial systems and technology without worrying about anyone accessing their personal information without authorization.</p1>
-    <ul>
-    <l1>Fast performance – Powered by future proof technology built for reliability and scalability</l1>
-    <l1>DR (Disaster Recovery) –
-
-    High availability of your cloud solution and data from any location.
+    <p2>A good way to understand the SaaS model is by thinking of a bank, which protects 
+    the privacy of each customer while providing service that is reliable and secure—on a 
+    massive scale. A bank’s customers all use the same financial systems and technology 
+    without worrying about anyone accessing their personal information without authorization.</p2>
+    
+    <p2>Fast performance – Powered by future proof technology built for reliability and scalability</p2>
+    <p2>DR (Disaster Recovery) –High availability of your cloud solution and data from any location.
     The ability to be up and running in hours rather than days in the event of a catastrophe disaster.
-    Full site to site replication of all cloud solutions and data ensuring your solution is always available</l1>
-    <l1>Reduced Costs–
-
-    High availability of your cloud solution and data from any location.
+    Full site to site replication of all cloud solutions and data ensuring your solution is always available</p2>
+    <p2>Reduced Costs–High availability of your cloud solution and data from any location.
     Reduced business insurance premiums,
     Reduce capital expenditure no up-front setup costs compared to in-house
-    Reduce in-house utility costs of running servers</l1>
+    Reduce in-house utility costs of running servers</p2>
     
-</ul>
+
     </div>
-  </div>
-     
-     
-        
-    
+
                
-         <p>  <div class="gallery3">
+         <div class="gallery3">
   <a target="_blank" href="amazon.jpg">
     <img src="amazon.jpg" alt="amazon" width="400" height="400">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">laaS</h2>
-  <p>These compelling benefits are just some of the key factors to what
+  <div class="desc"><h2 style="background-color: Wheat;">laaS</h2></div>
+  <p2>These compelling benefits are just some of the key factors to what
   makes IaaS “Infrastructure as a Service” cloud technology revolutionary
   over traditional in-house solutions. Your business can reduce its IT 
   capital expenditures (CapEx) investments, while gaining true agility using
   the latest innovations in technology to adopt and deploy new capabilities
-  more quickly, smoothly, cost effectively and efficiently!</p>
+  more quickly, smoothly, cost effectively and efficiently!</p2>
      
     <h>IaaS architecture and how it works</h> 
 
-<p>In an IaaS model, a cloud provider hosts the infrastructure components 
+<p2>In an IaaS model, a cloud provider hosts the infrastructure components 
 traditionally present in an on-premises data center, including servers, storage
 and networking hardware, as well as the virtualization or hypervisor layer.
 
@@ -259,20 +330,18 @@ such as backup, replication and recovery. These services are increasingly policy
 enabling IaaS users to implement greater levels of automation and orchestration for 
 important infrastructure tasks. For example, a user can implement policies to drive
 load balancing to maintain application availability and performance.
-  </p>   
+  </p2>   
     </div>
-  </div>
+  
      
 
-
-
-       <p>  <div class="gallery4">
+       <div class="gallery4">
   <a target="_blank" href="gmail.png">
     <img src="gmail.png" alt="gmail" width="400" height="400">
   </a>
-  <div class="desc"><h2 style="background-color: Wheat;">Communications as a Service (CaaS)</h2>
+  <div class="desc"><h2 style="background-color: Wheat;">Communications as a Service (CaaS)</h2></div>
   
-  <p>Communications as a Service (CaaS) is an outsourced enterprise communications solution
+  <p2>Communications as a Service (CaaS) is an outsourced enterprise communications solution
   that can be leased from a single vendor. Such communications can include voice over IP 
   (VoIP or Internet telephony), instant messaging (IM), collaboration and videoconference
   applications using fixed and mobile devices. CaaS has evolved along the same lines as Software
@@ -287,36 +356,24 @@ CaaS offers flexibility and expandability that small and medium-sized business m
 afford, allowing for the addition of devices, modes or coverage on demand. The network capacity and
 feature set can be changed from day to day if necessary so that functionality keeps pace with demand
 and resources are not wasted. There is no risk of the system becoming obsolete and requiring periodic
-major upgrades or replacement.</p>
-     
-     
-    </div>
+major upgrades or replacement.</p2>
+    
   </div>
 
   </br>
   </br>
   </br>
+  <p><strong>If additional information is requested, feel free to contact me through the 
+  following platforms</strong></p>
   </br>
-  <p2><strong>If more information is requested feel free to contact me through the 
-  following resourse</strong></p2>
-  </br>
-  </br>
-  </br>
+  
   <ul1>
     <li><strong>Contact Number:</strong> 086******</li>
 </br>
     <li><strong>Personal email address:</strong> rmurayyy1234@gmail.com</li>
     </br>
     <li><strong>Business email address:</strong> 112384594h34@umail.ie</li>
-</ul>
+</ul1>
      
      </body>
 </html>
-
-
-
-
-
- 
-  
-  

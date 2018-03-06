@@ -7,7 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
         
-    </head>
+    
     
     <style>
         
@@ -18,12 +18,22 @@
     text-align: center;
 }
 
-.label {
+.label
+{
+    text-align: center;
+}
+.h4{
+    text-align: center;
+    font: 30px;
+}
+
+.subtotal{
     text-align: center;
 }
 
     </style>
-    
+    </head>
+    <body>
         <h4>Select a Product</h4>
         
         <br/>
@@ -81,7 +91,7 @@
             <br/>
             
             <label for="total">
-                Total
+                Total:
                 <input type="hidden" id="total" name="total" value="0.00" readonly/>
             </label>
             
