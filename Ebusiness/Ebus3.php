@@ -48,15 +48,20 @@ button{
 }
 
 li{
-       text-align: center;
+     text-align: center;
     font-size: 30px;
     color: Plum;
    float: right;
 }
+a{
+    text-align: center;
+    font-size: 30px;
+    color: Plum;
+}
     </style>
     </head>
    <body>
-                 <link rel="stylesheet" href="/mystylesheet.css" type="text/css" />
+                
 
 <li><a href="../homepage.html">HOME</a></li>
 <br>

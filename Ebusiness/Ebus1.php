@@ -43,11 +43,18 @@ li{
    float: right;
 }
 
-button{
+button1{
     text-align: center;
     font-size: 25px;
     color: White;
     background-color: Wheat;
+}
+
+button{
+    text-align: center;
+    font-size: 25px;
+    color: White;
+    background-color: DarkSlateBlue;
 }
 
     </style>
@@ -125,7 +132,7 @@ button{
         
         <br>
             <br>
-            <button type="submit" id="btnProceed" disabled>Add to shopping cart</button>
+            <button1 type="submit" id="btnProceed" disabled>Add to shopping cart</button1>
 
          </form>
     </body>

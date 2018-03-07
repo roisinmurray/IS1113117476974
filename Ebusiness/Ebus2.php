@@ -43,6 +43,13 @@ a{
     color: Plum;
 }
 
+button1{
+    text-align: center;
+    font-size: 25px;
+    color: White;
+    background-color: Plum;
+}
+
 button{
     text-align: center;
     font-size: 25px;
@@ -100,7 +107,7 @@ li{
          
             <br>
             
-            <button onClick="validateDetails()"> Validate </button>
+            <button1 onClick="validateDetails()"> Validate </button1>
         </form>
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
