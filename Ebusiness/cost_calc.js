@@ -57,8 +57,5 @@ function calcSub(){
     function disablebtnProceed(){
         $('#btnProceed').prop('disabled', true);
     }
-
-    
-    
     
     
