@@ -57,6 +57,10 @@ button{
     background-color: DarkSlateBlue;
 }
 
+div {
+    text-align: center;
+}
+
     </style>
     </head>
     <body>
@@ -126,15 +130,18 @@ button{
                 <br>
             </label>
                 <br>
-        
-        <button onClick="calcSub()">Calculate Cost</button>
+                <br>
+                
+                  <button type ="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+             <br/>
+        <button1 onClick="calcSub()">Calculate Cost</button1>
         <a role="button" href="Ebus1.php">Clear Choice</a>
+       </div>
+        </form>
         
-        <br>
-            <br>
-            <button1 type="submit" id="btnProceed" disabled>Add to shopping cart</button1>
-
-         </form>
+        
+        
+        
     </body>
     
 </html>

@@ -71,25 +71,6 @@
   }
   
   
-  .navbar {
-      font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
-      background-color: DarkGrey;
-      border: 0;
-      font-size: 25px ;
-      letter-spacing: 5px;
-      opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-      color: DarkGrey;
-  }
-  .navbar-nav li a:hover {
-      color: White;
-  }
-  .navbar-nav li.active a {
-      color: Black;
-      background-color: White;
-  }
   
   .button {
     background-color: DarkSlateBlue;
@@ -105,67 +86,47 @@
     cursor: pointer;
 }
 
-
-li{
-     text-align: center;
-    font-size: 30px;
-    color: Plum;
-   float: right;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkGrey;
 }
-a{
+
+li {
+    float: right;
+    font-size: 20px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
     text-align: center;
-    font-size: 30px;
-    color: Plum;
+    padding: 16px 16px;
+    text-decoration: none;
 }
-
  
   </style>
     
 </head>
 
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
+
      <ul>
-  <li><a href="https://dashboard.heroku.com/apps/is117476974">HEROKUAPP</a></li>
-  <li><a href="https://github.com/roisinmurray/IS1113117476974">GIT HUB</a></li>
+
   <li><a href="Ebusiness/shop.html">MY SHOP</a></li>
+      <li><a href="cv_page1.html">PERSONAL INFO</a></li>
+  <li><a href="cv_page2.html">BACK</a></li>
+      <li><a href="../homepage.html">HOME</a></li>
+      <li><a href="interests/sports.html">SPORTS/HOBBBIES</a></li>
+      <li><a href="interests/travel.html">TRAVEL</a></li>
+      <li><a href="interests/CloudServices.html">CLOUD SERVICES</a></li>
   
-  <li class="dropdown">
-    <a>CV</a>
-    <div class="dropdown-content">
-      <a href="cv_page1.html">PERSONAL INFO</a>
-      <a href="cv/cv_page2.html">HOME</a>
-      <a href="../home">HOME</a>
-    </div>
-    </li>
-    
-      <li class="dropdown">
-    <a>INTERESTS</a>
-    <div class="dropdown-content">
-      <a href="interests/sports.html">SPORTS/HOBBBIES</a>
-      <a href="interests/travel.html">TRAVEL</a>
-      <a href="interests/CloudServices.html">CLOUD SERVICES</a>
-    </div>
-    
-    
   </li>
 </ul>
-      
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="cv_page2.html">BACK</a></li>
-<li><a href="../homepage.html">HOME</a></li>
-        <li><a href="cv_page1.html">PERSONAL INFO</a></li>
-     <li><a href="cv_page3.html">WORK EXPERINCE</a></li>
-       
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
    
