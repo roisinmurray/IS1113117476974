@@ -11,17 +11,24 @@ session_start();
         
         
         <!--jQuery-->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
         <style>
+        
+        /*Styling the background*/
         
     body {
     background-image: url("paper.jpg");
 } 
 
+/*Styling the forms(text, color etc)*/
+
 form {
     text-align: center;
 }
+
+/*Styling the headings(text, color etc)*/
 
 h {
     text-align: center;
@@ -30,6 +37,8 @@ h {
     
 }
 
+/*Styling the labels(text, color etc)*/
+
 label
 {
     text-align: center;
@@ -37,11 +46,15 @@ label
     color: DarkGrey;
 }
 
+/*Styling (text, color etc)*/
+
 a{
     text-align: center;
     font-size: 30px;
     color: Plum;
 }
+
+/*Styling attributes of the buttons (text, color etc)*/
 
 button1{
     text-align: center;
@@ -57,6 +70,8 @@ button{
     background-color: Wheat;
 }
 
+/*Styling the lists(text, color etc)*/
+
 li{
        text-align: center;
     font-size: 30px;
@@ -69,6 +84,9 @@ li{
     </head>
     
     <body>
+        
+         <!--Adding link to homepage-->
+         
         <li><a href="../homepage.html">HOME</a></li>
         <br>
         <br>
@@ -79,6 +97,8 @@ li{
             <br>
             
             <form method = "POST" action = "Ebus3.php">
+                
+                 <!--Adding labels for payment details etc-->
                 
                 <label for="user_pin">
                      PIN:
@@ -101,12 +121,17 @@ li{
                 <input type="text" id="user_email" placeholder="email" required>
                 <br/>
                 <br/> 
+                
+                <!--Adding button to form-->
+                
                 <button type="Submit" id="btnPurchase" disabled> 
                     Proceed with Purchase 
                 </button>
          
             <br>
             
+             <!--Adding button to form-->
+             
             <button1 onClick="validateDetails()"> Validate </button1>
         </form>
         <script type="text/javascript" src="ebus2_validator.js"></script>

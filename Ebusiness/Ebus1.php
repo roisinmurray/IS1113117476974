@@ -4,24 +4,34 @@
         <title>Select Project</title>
         
         <!--jQuery-->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
         
     <style>
         
+    /*Styling background image*/
+        
     body {
     background-image: url("paper.jpg");
 } 
+
+/*Styling the text in forms*/
+
  form {
     text-align: center;
 }
 
-h {
+/*Styling the headings(text, color etc)*/
+
+h { 
     text-align: center;
     font-size: 30px;
     color: DarkSlateBlue;
     
 }
+
+/*Styling the label (text, color etc)*/
 
 label
 {
@@ -29,6 +39,8 @@ label
     font-size: 25px;
     color: DarkGrey;
 }
+
+/*Styling the lists(text, color etc)*/
 
 a{
     text-align: center;
@@ -42,6 +54,8 @@ li{
     color: Plum;
    float: right;
 }
+
+/*Styling the attributes of button(text, color etc)*/
 
 button1{
     text-align: center;
@@ -64,9 +78,11 @@ div {
     </style>
     </head>
     <body>
-        <link rel="ebusstyle" href="ebusstyle.css" type="text/css">
+
         <form method="POST" action="Ebus2.php">
             
+             <!--Adding link to homepage-->
+             
             <li><a href="../homepage.html">HOME</a></li>
             <br>
             <br>
@@ -74,6 +90,8 @@ div {
         <br> 
         <br>
         
+         <!--Adding labels for each type of cloud computing/ totals etc-->
+         
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" Checked onClick="disablebtnProceed()"/>
                 SalesForce @ &euro; 100
@@ -132,8 +150,13 @@ div {
                 <br>
                 <br>
                 
+                <!--Adding button to form-->
+                
                   <button type ="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
              <br/>
+             
+             <!--Adding button to form-->
+             
         <button1 onClick="calcSub()">Calculate Cost</button1>
         <a role="button" href="Ebus1.php">Clear Choice</a>
        </div>

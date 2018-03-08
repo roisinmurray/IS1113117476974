@@ -1,25 +1,15 @@
+/*Styling the mainheading (background, text, color etc)*/
+
 .mainheading{
     text-align: center;
-    
+text-shadow: 6px 4px DarkGrey;
+font-size: 80px;
+font-family: "ArialVerdana", Sans-serif;
+color: DarkSlateBlue;
 }
 
-.mainheading{
-    text-shadow: 6px 4px DarkGrey;
-}
-  
-.mainheading{
-    font-size: 80px;
-}
- 
-.mainheading{
-    font-family: "ArialVerdana", Sans-serif;
-}
+/*Styling images/boarders*/
 
-.mainheading{
-    color: DarkSlateBlue;
-}
-
- 
 .center1 {
     position: absolute;
     right: 0;
@@ -65,16 +55,14 @@
     font-size: 20px;
 }
 
+/*Styling the lists/nav bar (background, text, color etc)*/
+
 a:link {
     color: Wheat;
 }
 
 a:hover {
     color: Plum;
-}
-  
-body {
-    background-image: url("brick.jpg");
 }
 
 ul {
@@ -122,7 +110,7 @@ li a {
     text-decoration: none;
 }
 
-
+/*Styling image for homepage*/
 
 div.ucc {
     margin: 10px;
@@ -140,3 +128,8 @@ div.ucc img {
     height: auto;
 }
 
+/*Styling background*/
+
+body {
+    background-image: url("brick.jpg");
+}

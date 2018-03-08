@@ -9,13 +9,19 @@ session_start();
         
         <style>
         
+        /*Styling background*/
+        
     body {
     background-image: url("background1.jpg");
 } 
 
+/*Styling the forms(text, color etc)*/
+
  form {
     text-align: center;
 }
+
+/*Styling attributes such as (text, color etc)*/
 
 div {
     text-align: center;
@@ -24,12 +30,16 @@ div {
     
 }
 
+/*Styling the headings(text, color etc)*/
+
 h {
     text-align: center;
     font-size: 35px;
     color: DarkSlateBlue;
     
 }
+
+/*Styling the labels(text, color etc)*/
 
 label
 {
@@ -38,7 +48,7 @@ label
     color: DarkGrey;
 }
 
-
+/*Styling attributes of the button(text, color etc)*/
 
 button{
     text-align: center;
@@ -46,6 +56,8 @@ button{
     color: White;
     background-color: Wheat;
 }
+
+/*Styling lists(text, color etc)*/
 
 li{
      text-align: center;
@@ -61,12 +73,16 @@ a{
     </style>
     </head>
    <body>
-                
+    
+     <!--Adding link to homepage-->            
 
 <li><a href="../homepage.html">HOME</a></li>
 <br>
 <br>
 <br>
+
+<!--Creating receipt--> 
+
         <div id="receipt">
              <h>Here is your receipt</h> 
 <br>

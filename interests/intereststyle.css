@@ -1,3 +1,5 @@
+/*Styling different sections of the pagepilling eg.background, text, color*/
+
 #section1{
     
     background-image: url("world.jpg");
@@ -38,7 +40,7 @@
       text-align:center;
 }
 
-
+/*Styling paragraphs & headings eg.background, text, color*/
 
 .h2 {
     text-align: center;
