@@ -29,6 +29,7 @@ h {
     font-size: 30px;
     color: DarkSlateBlue;
     
+    
 }
 
 /*Styling the label (text, color etc)*/
@@ -78,15 +79,18 @@ div {
     </style>
     </head>
     <body>
+        
+<li><a href="../homepage.html">HOME</a></li>
 
+        <br>
+        <br>
+        
         <form method="POST" action="Ebus2.php">
             
              <!--Adding link to homepage-->
              
-            <li><a href="../homepage.html">HOME</a></li>
-            <br>
-            <br>
-           <h><strong>Please Select A Product</strong></h>
+             <h><strong>Please Select A Product</strong></h>
+            
         <br> 
         <br>
         
@@ -99,8 +103,8 @@ div {
             
             <br>
             
-            <label for="amazon web service">
-                <input type="radio" id="amazon web service" name="product" Checked onClick="disablebtnProceed()"/>
+            <label for="aws">
+                <input type="radio" id="aws" name="product" Checked onClick="disablebtnProceed()"/>
                 amazon web service @ &euro; 300
             </label>
             
@@ -159,7 +163,7 @@ div {
              
         <button1 onClick="calcSub()">Calculate Cost</button1>
         <a role="button" href="Ebus1.php">Clear Choice</a>
-       </div>
+      
         </form>
         
         

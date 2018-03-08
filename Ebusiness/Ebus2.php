@@ -131,9 +131,10 @@ li{
             <br>
             
              <!--Adding button to form-->
-             
-            <button1 onClick="validateDetails()"> Validate </button1>
+          
         </form>
+        <button1 onClick="validateDetails()"> Validate </button1>
+        
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
         <?php
