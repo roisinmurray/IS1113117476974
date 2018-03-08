@@ -91,13 +91,14 @@ li{
         <br>
         <br>
         <br>
-        <h>Please enter your payment details</h>
         
-            <br>
-            <br>
             
             <form method = "POST" action = "Ebus3.php">
                 
+                <h>Please enter your payment details</h>
+        
+            <br>
+            <br>
                  <!--Adding labels for payment details etc-->
                 
                 <label for="user_pin">
@@ -132,9 +133,9 @@ li{
             
              <!--Adding button to form-->
           
-        </form>
+   
         <button1 onClick="validateDetails()"> Validate </button1>
-        
+         </form>
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
         <?php

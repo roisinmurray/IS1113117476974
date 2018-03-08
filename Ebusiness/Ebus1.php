@@ -77,10 +77,9 @@ div {
 }
 
     </style>
+    <li><a href="../homepage.html">HOME</a></li>
     </head>
     <body>
-        
-<li><a href="../homepage.html">HOME</a></li>
 
         <br>
         <br>
